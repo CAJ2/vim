@@ -68,6 +68,12 @@ let mapleader = " "                    " Set global mapleader to space
 set noswapfile
 set autoindent
 set smartindent
+set tabstop=8
+set shiftwidth=4
+set smarttab
+set softtabstop=4
+set shiftround
+set expandtab
 set hidden                             " Useful for auto setting hidden buffers
 syntax enable                          " Enable syntax highlighting
 set nostartofline                      " Don't reset cursor to start of line when moving around
