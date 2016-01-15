@@ -162,6 +162,9 @@ if has("autocmd")
   let pandoc_pipeline .= " | pandoc --from=markdown --to=html"
   autocmd FileType html setlocal formatexpr=FormatprgLocal(pandoc_pipeline)
 endif
+
+" Automatically launch python files with the F9 key
+autocmd FileType python nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 " [ Mappings ] {{{1
 " Stuff {{{2
 
